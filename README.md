@@ -1,21 +1,26 @@
-# Salut, je suis Landry 👋
+# Hi there 👋 i'm OHIN Landry, i'm a beninese 🇧🇯 
+Recently graduated in programmation, i love discovering and learning new things!
+Feel free to check and see what i've done, thanks !👋
 
-Développeur fullstack passionné par Vue.js, Node.js et les PWA.
+Développeur Front passionné par Vue.js, React et Node.js et les PWA.
 
 ## Tech Stack
 
-- **Frontend:** Vue.js, BootstrapVue, Vite
+- **Frontend:** Vue.js, React Js,Html CSS, BootstrapVue, Vite
 - **Backend:** Node.js, Express, MongoDB
 - **DevOps:** Docker, GitHub Actions
 
 ## Projets récents
 
 - [Sedomi](https://github.com/landryohin/sedomi) — Application de transfert d’argent
+- [Saga]  — Systéme de gestion de courier
 - [Mon blog](https://landryohin.github.io/blog) — Blog personnel
 
 ## Contact
 
-- [LinkedIn](https://linkedin.com/in/landryohin)
+- [LinkedIn](https://linkedin.com/landryohin)
+- [gmail](landryohin1993@gmail.com)
 - [Twitter](https://twitter.com/landryohin)
 
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+ 
+ 
