@@ -12,20 +12,20 @@ import type { ResumeConfig } from './types'
 export const resumeConfig: ResumeConfig = {
   // ===== PERSONAL INFO =====
   personal: {
-    name: 'Jane Doe',
+    name: 'Landry Assereou OHIN',
     // Auto-detected: just drop your photo or profile image in public/images/ (any .jpg, .png, .webp)
     // You can also set a specific path here to override auto-detection:
     photo: '/images/photo.jpg',
-    photoBackEmoji: '👩‍💻', // Shown when clicking the photo (3D flip)
+    photoBackEmoji: '💻', // Shown when clicking the photo (3D flip)
     title: {
       en: 'Fullstack Developer',
-      fr: 'Développeuse Fullstack',
+      fr: 'Développeur Fullstack',
     },
     subtitle: {
-      en: '6 years of experience',
-      fr: '6 ans d\'expérience',
+      en: '+ 5 years of experience',
+      fr: '+ 5 ans d\'expérience',
     },
-    location: 'Paris, France',
+    location: 'Cotonou, Bénin',
   },
 
   // ===== SEO (used in <head> meta tags) =====
@@ -46,11 +46,11 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== CONTACT =====
   contact: [
-    { type: 'github', label: 'janedoe', href: 'https://github.com/janedoe' },
-    { type: 'linkedin', label: 'Jane Doe', href: 'https://linkedin.com/in/janedoe' },
-    { type: 'email', label: 'jane@example.com' },
-    { type: 'phone', label: '+33 6 12 34 56 78' },
-    { type: 'location', label: 'Paris, France' },
+    { type: 'github', label: 'landryohin', href: 'https://github.com/landryohin' },
+    { type: 'linkedin', label: 'Landry .A OHIN', href: 'https://www.linkedin.com/in/landry-a-ohin-053179188/' },
+    { type: 'email', label: 'landrohin@gmail.com' },
+    { type: 'phone', label: '+229 01 67 18 13 29' },
+    { type: 'location', label: 'Cotonou, Bénin' },
   ],
 
   // ===== SKILLS =====
@@ -59,8 +59,9 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'Languages', fr: 'Langues' },
       type: 'languages',
       items: [
-        { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'TOEIC 910' },
+        { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: '(Natif)' } },
+        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Intermediate', fr: '(Intermediate)' }, details: ' ' },
+        { name: { en: 'Chinese', fr: 'Chinois' }, level: { en: 'Beginner', fr: 'Débutant (初学者)' }, details: 'HSK 2' },
       ],
     },
     {
@@ -68,16 +69,19 @@ export const resumeConfig: ResumeConfig = {
       type: 'badges',
       items: [
         { name: 'React' },
-        { name: 'TypeScript' },
-        { name: 'Angular' },
+        { name: 'Vue.js' },
+        { name: 'Nuxt.js' },
+        { name: 'WordPress' },
+        { name: 'Webflow' },
       ],
     },
     {
       title: { en: 'Backend', fr: 'Backend' },
       type: 'badges',
       items: [
-        { name: 'Node.js' },
-        { name: 'Python' },
+        { name: 'Laravel' },
+        { name: 'Symfony' },
+        { name: 'WordPress' },
       ],
     },
     {
@@ -85,7 +89,7 @@ export const resumeConfig: ResumeConfig = {
       type: 'badges',
       items: [
         { name: 'PostgreSQL' },
-        { name: 'MongoDB' },
+        { name: 'MySQL' },
       ],
     },
     {
@@ -93,16 +97,25 @@ export const resumeConfig: ResumeConfig = {
       type: 'badges',
       items: [
         { name: 'Docker' },
-        { name: 'Kubernetes' },
-        { name: 'AWS' },
-        { name: 'GitHub Actions' },
+        { name: 'GitHub' },
+      ],
+    },
+    {
+      title: { en: 'Graphics tools', fr: 'Graphisme' },
+      type: 'badges',
+      items: [
+        { name: 'Photoshop' },
+        { name: 'Illustrator' },
+        { name: 'Boostrap studio' },
+        { name: 'Figma' },
+        { name: 'Canva' },
       ],
     },
     {
       title: { en: 'Methodologies', fr: 'Méthodologies' },
       type: 'text',
       items: [
-        { name: { en: 'Agile/Scrum, TDD, Code Review, CI/CD', fr: 'Agile/Scrum, TDD, Code Review, CI/CD' } },
+        { name: { en: 'Agile/Scrum, Code Review', fr: 'Agile/Scrum,  Code Review' } },
       ],
     },
   ],
@@ -110,149 +123,179 @@ export const resumeConfig: ResumeConfig = {
   // ===== PROFESSIONAL EXPERIENCES =====
   experiences: [
     {
-      id: 'company-a',
-      company: { en: 'TechCorp', fr: 'TechCorp' },
-      role: { en: 'Senior Fullstack Developer', fr: 'Développeuse Fullstack Senior' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2022 - Present', fr: '2022 - Présent' },
+      id: 'FREELANCE_EXPERIENCE',
+      company: { en: 'Freelance', fr: 'Freelance' },
+      role: { en: 'Fullstack Web Developer & Product Designer', fr: 'Développeur Web Fullstack & Product Designer' },
+      type: { en: 'Freelance', fr: 'Freelance' },
+      period: { en: 'Oct. 2024 - Present', fr: 'Oct. 2024 - Présent' },
       description: {
-        en: 'Led the development of a SaaS platform used by 10k+ users. Built microservices architecture and modern React frontend.',
-        fr: 'Direction du développement d\'une plateforme SaaS utilisée par 10k+ utilisateurs. Architecture microservices et frontend React moderne.',
-      },
-      techs: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
+
+      },// Période à ajuster selon vos dates réelles
+      techs: ['WordPress', 'PHP', 'VueJS 3', 'Next.js', 'JavaScript', 'SQL', 'Postman', 'PostgreSQL', 'UI/UX Design'],
       isHighlighted: true,
       details: {
         context: {
-          en: 'Team of 8 developers within a 50-person product company. Agile/Scrum methodology with 2-week sprints, CI/CD pipeline with GitHub Actions, code reviews on every PR.',
-          fr: 'Équipe de 8 développeurs au sein d\'une société produit de 50 personnes. Méthodologie Agile/Scrum avec sprints de 2 semaines, pipeline CI/CD avec GitHub Actions, code review sur chaque PR.',
+          en: 'Independent development and design of diverse digital solutions ranging from Fintech and Logistics to Green Tech and Real Estate for international clients (France, Benin, Burkina Faso).',
+          fr: 'Développement et conception indépendante de solutions numériques variées, allant de la Fintech et Logistique à la Green Tech et l’Immobilier pour des clients internationaux (France, Bénin, Burkina Faso).',
         },
         tasks: {
           en: [
-            'Designed and implemented the frontend architecture (monorepo, shared component library)',
-            'Built a real-time notification system using WebSockets and Redis pub/sub',
-            'Migrated legacy codebase from JavaScript to TypeScript (200+ files)',
-            'Implemented role-based access control (RBAC) across the entire platform',
-            'Set up automated testing with 85% code coverage (unit, integration, E2E)',
-            'Led the migration from REST to GraphQL for the main API',
-            'Built a dashboard analytics module with interactive charts and export features',
-            'Mentored 3 junior developers through pair programming and weekly 1-on-1s',
+            'Easybail (France): Developed a rental management application for leases, contracts, and automated payment reminders',
+            'Afric-uni (Benin): Built a ticket generation system and a real-time stock management application for fuel stations',
+            'Sedomi App (Fintech): Developed the web platform for money transfers between Russia and Africa using VueJS 3 and Next.js API',
+
+            'OQSF-BF (Burkina Faso): Designed UI prototypes for a customer complaint and suggestion management system',
+            'Evolvener (Benin): Designed and developed a professional platform focused on renewable energy management',
+            'RG Résidence (Benin): Created a hospitality showcase and booking website for furnished apartment rentals',
+            'Sedomi App: Led product design (UI/UX) and community management to drive user adoption',
+            'Managed full deployment cycles and server synchronization using Filezilla across multiple projects'
           ],
           fr: [
-            'Conception et implémentation de l\'architecture frontend (monorepo, bibliothèque de composants partagés)',
-            'Création d\'un système de notifications temps réel via WebSockets et Redis pub/sub',
-            'Migration du code legacy de JavaScript vers TypeScript (200+ fichiers)',
-            'Implémentation d\'un contrôle d\'accès basé sur les rôles (RBAC) sur toute la plateforme',
-            'Mise en place de tests automatisés avec 85% de couverture (unitaires, intégration, E2E)',
-            'Pilotage de la migration de REST vers GraphQL pour l\'API principale',
-            'Développement d\'un module de tableau de bord analytique avec graphiques interactifs et export',
-            'Mentorat de 3 développeurs juniors via pair programming et 1-on-1 hebdomadaires',
-          ],
-        },
-        training: {
-          en: [
-            'AWS Solutions Architect certification',
-            'Internal training on Kubernetes orchestration',
-          ],
-          fr: [
-            'Certification AWS Solutions Architect',
-            'Formation interne sur l\'orchestration Kubernetes',
+            'Easybail (France) : Développement d’une application de gestion locative (baux, contrats, loyers et relances automatisées)',
+            'Afric-uni (Bénin) : Création d’un système de génération de tickets valeur et d’une application de gestion de stock pour stations-service',
+            'Sedomi App (Fintech) : Développement de l’application web de transfert d’argent (Russie vers Afrique) avec VueJS 3 et Next.js API',
+
+            'OQSF-BF (Burkina Faso) : Conception de la maquette UI de l’application de gestion des plaintes et suggestions clients',
+            'Evolvener (Bénin) : Conception et développement du site web axé sur les technologies vertes et les énergies renouvelables',
+            'RG Résidence (Bénin) : Création du site de réservation et vitrine pour la location d’appartements meublés',
+            'Gestion complète des cycles de déploiement et synchronisation serveur via Filezilla pour l’ensemble des projets',
+            'Sedomi App : Design produit (UI/UX) et gestion de la communauté pour favoriser l’adoption du service',
           ],
         },
         env: {
-          en: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-          fr: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
+          en: 'WordPress / PHP / VueJS 3 / Next.js / JavaScript / Postman / Filezilla / UI-UX Design',
+          fr: 'WordPress / PHP / VueJS 3 / Next.js / JavaScript / Postman / Filezilla / Design UI-UX',
         },
       },
     },
+
+
+
+
+
     {
-      id: 'company-b',
-      company: { en: 'WebAgency', fr: 'WebAgency' },
-      role: { en: 'Frontend Developer', fr: 'Développeuse Frontend' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2019 - 2022', fr: '2019 - 2022' },
-      description: {
-        en: 'Developed responsive web applications for various clients. Specialized in React and Angular projects.',
-        fr: 'Développement d\'applications web responsives pour divers clients. Spécialisée en projets React et Angular.',
+      id: 'DGML_MEF',
+      company: {
+        en: 'Directorate General of Equipment and Logistics - Ministry of Economy and Finance',
+        fr: 'Direction Générale du Matériel et de la Logistique - Ministère de l’Economie et des Finances (MEF)'
       },
-      techs: ['React', 'Angular', 'TypeScript', 'SCSS'],
+      role: { en: 'Fullstack Web Developer', fr: 'Développeur Web Fullstack' },
+      type: { en: 'Professional Project / Contract', fr: 'Projet Professionnel / Contractuel' },
+      period: { en: '2022 - 2024', fr: '2022 - 2024' },
+      description: {
+
+      },// Période à ajuster selon vos dates réelles
+      techs: ['Symfony 7', 'VueJS 3', 'Nuxt.js', 'Headless WordPress', 'API REST'],
       details: {
         context: {
-          en: 'Digital agency with 20+ clients across various industries (retail, finance, healthcare). Team of 12 developers, working on 3-4 projects simultaneously.',
-          fr: 'Agence digitale avec 20+ clients dans différents secteurs (retail, finance, santé). Équipe de 12 développeurs, travaillant sur 3-4 projets simultanément.',
+          en: 'Modernization of administrative processes and digital presence for the Beninese Ministry of Economy and Finance through the development of specialized tools and official platforms.',
+          fr: 'Modernisation des processus administratifs et de la présence numérique du Ministère de l’Economie et des Finances du Bénin via le développement d’outils métiers et de plateformes officielles.',
         },
         tasks: {
           en: [
-            'Built 15+ client-facing web applications from scratch',
-            'Created and maintained a shared design system used across all agency projects',
-            'Implemented complex form workflows with multi-step validation',
-            'Optimized web performance achieving 90+ scores on Core Web Vitals',
-            'Integrated third-party APIs (payment, CRM, analytics)',
-            'Set up Storybook documentation for reusable components',
-            'Collaborated closely with UX designers to translate Figma mockups into pixel-perfect UIs',
+            'Designed and developed the SAGA application for automated mail management using a decoupled architecture',
+            'Built a robust REST API with Symfony 7 to handle administrative data workflows',
+            'Developed a modern and reactive user interface with VueJS 3 for the internal management system',
+            'Created the official DGML website (dgml.bj) using a Headless WordPress architecture',
+            'Integrated Nuxt.js for the frontend to ensure optimal performance and SEO for the institutional portal',
+            'Managed secure deployment and file synchronization using Filezilla and server-side protocols',
           ],
           fr: [
-            'Développement de 15+ applications web clients from scratch',
-            'Création et maintenance d\'un design system partagé utilisé sur tous les projets de l\'agence',
-            'Implémentation de workflows de formulaires complexes avec validation multi-étapes',
-            'Optimisation des performances web avec scores 90+ sur les Core Web Vitals',
-            'Intégration d\'APIs tierces (paiement, CRM, analytics)',
-            'Mise en place de la documentation Storybook pour les composants réutilisables',
-            'Collaboration étroite avec les designers UX pour traduire les maquettes Figma en interfaces pixel-perfect',
-          ],
-        },
-        training: {
-          en: [
-            'Angular Advanced workshop (2 days)',
-            'Accessibility (WCAG 2.1) certification',
-          ],
-          fr: [
-            'Workshop Angular Avancé (2 jours)',
-            'Certification Accessibilité (WCAG 2.1)',
+            'Conception et développement de l’application SAGA (Système de Gestion Automatique de courrier) en architecture découplée',
+            'Réalisation d’une API REST robuste avec Symfony 7 pour la gestion des flux de données administratifs',
+            'Développement d’une interface utilisateur moderne et réactive avec VueJS 3 pour le système de gestion',
+            'Conception du site institutionnel de la DGML (dgml.bj) via une architecture Headless WordPress',
+            'Utilisation de Nuxt.js en frontend pour garantir performance et SEO au portail officiel',
+            'Gestion des déploiements et de la synchronisation des fichiers via Filezilla et protocoles serveurs',
           ],
         },
         env: {
-          en: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-          fr: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
+          en: 'Symfony 7 (API) / VueJS 3 / Nuxt.js / Headless WordPress / Filezilla',
+          fr: 'Symfony 7 (API) / VueJS 3 / Nuxt.js / Headless WordPress / Filezilla',
         },
       },
     },
+
+
     {
-      id: 'internship',
-      company: { en: 'StartupXYZ', fr: 'StartupXYZ' },
-      role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeuse Fullstack' },
-      type: { en: 'Internship', fr: 'Stage' },
-      period: { en: '2018 - 2019', fr: '2018 - 2019' },
+      id: 'KYSOLUTIONS',
+      company: { en: 'KY-SOLUTIONS', fr: 'KY-SOLUTIONS' },
+      role: { en: 'Web & Mobile Developer Intern', fr: 'Stagiaire Développeur Web & Mobile' },
+      type: { en: 'Internship (8 months)', fr: 'Stage (08 mois)' },
+      period: { en: 'Jan 2022 - Aug 2022', fr: 'Jan 2022 - Août 2022' },
       description: {
-        en: 'Contributed to the development of an e-commerce platform. Gained experience in fullstack development.',
-        fr: 'Contribution au développement d\'une plateforme e-commerce. Acquisition d\'expérience en développement fullstack.',
+
       },
-      techs: ['React', 'Node.js', 'MongoDB', 'Machine Learning'],
+
+      techs: ['PHP', 'WordPress', 'SQL', 'Mobile Dev', 'E-commerce'],
       details: {
         context: {
-          en: 'Early-stage startup (seed round), small team of 5 developers building an e-commerce platform from the ground up. Fast-paced environment with weekly releases.',
-          fr: 'Startup en phase de démarrage (seed round), petite équipe de 5 développeurs construisant une plateforme e-commerce from scratch. Environnement rapide avec des releases hebdomadaires.',
+          en: 'Contributed to the development of several web and mobile applications for logistics, events, and e-commerce, while optimizing performance and user experience (UI).',
+          fr: 'Participation au développement de plusieurs applications web et mobiles dans les secteurs de la logistique, de l’événementiel et de l’e-commerce, tout en optimisant les performances et l’expérience utilisateur (UI).',
         },
         tasks: {
           en: [
-            'Developed the product catalog with advanced filtering and search',
-            'Built the shopping cart with real-time inventory checking',
-            'Integrated Stripe payment gateway with 3D Secure support',
-            'Implemented user authentication with JWT and OAuth (Google, Facebook)',
-            'Created an admin dashboard for order management and analytics',
-            'Wrote API documentation with Swagger/OpenAPI',
+            'Developed mobile applications including eStock (logistics) and eWeeding (event management)',
+            'Built various professional websites such as ekoworking.com, edwardsconciergie.com, and e-inventaire.com',
+            'Managed the back office and optimized UI/UX for the Afrotouchkosmetics.fr e-commerce platform',
+            'Maintained and updated applications to ensure compatibility with latest OS and device versions',
+            'Analyzed user behavior data to optimize application speed, fluidity, and navigation paths',
+            'Improved website traffic and conversion rates by optimizing page load speed and technical UI aspects',
           ],
           fr: [
-            'Développement du catalogue produits avec filtrage avancé et recherche',
-            'Création du panier d\'achat avec vérification de stock en temps réel',
-            'Intégration de la passerelle de paiement Stripe avec support 3D Secure',
-            'Implémentation de l\'authentification utilisateur avec JWT et OAuth (Google, Facebook)',
-            'Création d\'un tableau de bord admin pour la gestion des commandes et les analytics',
-            'Rédaction de la documentation API avec Swagger/OpenAPI',
+            'Développement d’applications mobiles telles que eStock (logistique) et eWeeding (organisation d’événements)',
+            'Réalisation de divers sites web professionnels (ekoworking.com, edwardsconciergie.com, e-inventaire.com, etc.)',
+            'Gestion du back-office et optimisation graphique (UI/UX) de la plateforme e-commerce Afrotouchkosmetics.fr',
+            'Maintenance et mise à jour des applications en fonction des évolutions des OS et des nouveaux terminaux',
+            'Analyse des données de comportement utilisateur pour optimiser la vitesse, la fluidité et les parcours',
+            'Optimisation technique (page load) et graphique du site de l’entreprise pour améliorer le taux de conversion',
           ],
         },
         env: {
-          en: 'React / Node.js / Express / MongoDB / Stripe / JWT / Docker / Heroku',
-          fr: 'React / Node.js / Express / MongoDB / Stripe / JWT / Docker / Heroku',
+          en: 'Laravel / WordPress / Vue.js / Nuxt.js / React / SQL / Flutter / Analytics',
+          fr: 'Laravel / WordPress / Vue.js / Nuxt.js / React / SQL / Flutter / Analytics',
+        },
+      },
+    },
+
+
+
+    {
+      id: 'GETECH',
+      company: { en: 'GETECH', fr: 'GETECH' },
+      role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeur Fullstack' },
+      type: { en: 'Internship (6 months)', fr: 'Stage (6 mois)' },
+      period: { en: 'Apr 2019 - Oct2019', fr: 'Avr 2019 - Oct 2019' },
+      description: {
+
+      },
+      techs: ['Laravel', 'PHP', 'MySQL', 'Méthodologie agile'],
+      details: {
+        context: {
+          en: 'During this internship, I optimized the user interface (UI) of the company website, contributed to the development of a mobile health application and designed a web platform for commercial exchanges for the agricultural sector.',
+          fr: 'Durant ce stage, j\'ai optimisé l\'interface utilisateur (UI) du site web de l\'entreprise, contribué au développement d\'une application mobile de santé et conçu une plateforme web d\'échanges commerciaux pour la filière agricole.',
+        },
+        tasks: {
+          en: [
+            'Optimized the website User Interface (UI) by auditing user flows and modernizing visual components',
+            'Contributed to the development of a mobile health application, including feature implementation and bug fixing',
+            'Designed and built a web platform for agricultural trade and distribution between producers and processors',
+            'Developed a real-time stock management system for agricultural raw materials',
+            'Implemented responsive design to ensure cross-device compatibility for the corporate website',
+            'Modeled and managed SQL databases for processing agricultural supply chain transactions',
+          ],
+          fr: [
+            'Optimisation de l\'interface utilisateur (UI) du site web via l\'audit des parcours et la modernisation des composants visuels',
+            'Participation au développement d\'une application mobile de santé, incluant l\'intégration de modules et la résolution de bugs',
+            'Conception et mise en place d\'une plateforme web de vente et distribution entre producteurs et transformateurs agricoles',
+            'Développement d\'un système de gestion de stock en temps réel pour les matières premières agricoles',
+            'Mise en œuvre d\'un design responsive pour garantir la compatibilité multi-supports du site institutionnel',
+            'Modélisation et gestion de bases de données SQL pour le suivi des transactions de la filière agricole',
+          ],
+        },
+        env: {
+          en: 'Laravel / PHP / MySQL / Agile methodology',
+          fr: 'Laravel / PHP / MySQL / Méthodologie agile',
         },
       },
     },
@@ -260,67 +303,102 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== PROJECTS (optional) =====
   projects: [
+
     {
-      id: 'project-a',
-      title: { en: 'WeatherApp', fr: 'WeatherApp' },
+      id: 'easybail',
+      title: { en: 'Easybail', fr: 'Easybail' },
       description: {
-        en: 'A real-time weather dashboard built with React and OpenWeather API.',
-        fr: 'Un tableau de bord météo en temps réel construit avec React et l\'API OpenWeather.',
+        en: 'Rental management application for leases, contracts, rents, receipts, and automated payment reminders.',
+        fr: 'Application de gestion de location : gestion des baux, contrats, loyers, quittances et relances automatisées.',
       },
-      techs: ['React', 'TypeScript'],
-      url: 'https://weather-app.example.com',
-      github: 'https://github.com/janedoe/weather-app',
+      techs: ['WordPress', 'PHP', 'JavaScript', 'API REST'],
+      url: 'https://easybail.fr',
     },
     {
-      id: 'project-b',
-      title: { en: 'TaskManager', fr: 'TaskManager' },
+      id: 'afric-uni-tickets',
+      title: { en: 'Afric-uni Sarl - Ticket System', fr: 'Afric-uni Sarl - Système de Tickets' },
       description: {
-        en: 'A Kanban-style task management tool with drag-and-drop.',
-        fr: 'Un outil de gestion de tâches style Kanban avec glisser-déposer.',
+        en: 'Value ticket generation and order management application for service stations.',
+        fr: 'Application de génération de tickets valeur et de gestion de commandes pour les stations-service.',
       },
-      techs: ['React', 'Node.js', 'PostgreSQL'],
-      github: 'https://github.com/janedoe/task-manager',
+      techs: ['WordPress', 'PHP', 'JavaScript'],
+      url: 'https://africunisarl.com/',
     },
+
+    {
+      id: 'sedomi-app',
+      title: { en: 'Sedomi App', fr: 'Sedomi App' },
+      description: {
+        en: 'Fintech platform for money transfers from Russia to Africa, including product design and community management.',
+        fr: 'Plateforme Fintech de transfert d’argent de la Russie vers l’Afrique, incluant le design produit et le community management.',
+      },
+      techs: ['VueJS 3', 'Postman', 'UI/UX Design', 'Community Management'],
+      url: 'https://www.sedomi.net/', // Ajoutez l'URL si disponible
+    },
+
+    {
+      id: 'evolvener',
+      title: { en: 'Evolvener', fr: 'Evolvener' },
+      description: {
+        en: 'Website focused on green technology and renewable energy management solutions.',
+        fr: 'Site web axé sur la technologie verte et la gestion des solutions d’énergies renouvelables.',
+      },
+      techs: ['WordPress'],
+      url: 'https://evolvener.com',
+    },
+    {
+      id: 'rg-residence',
+      title: { en: 'RG Residence', fr: 'RG Résidence' },
+      description: {
+        en: 'Showcase and booking website for hospitality services and furnished apartment rentals.',
+        fr: 'Site vitrine et de réservation pour services d’hébergement et location d’appartements meublés.',
+      },
+      techs: ['WordPress', 'PHP', 'JavaScript'],
+      url: 'https://residencelagrace.com',
+    },
+
   ],
+
 
   // ===== EDUCATION =====
   education: [
     {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Master in Computer Science', fr: 'Master Informatique' },
+      school: { en: 'ESGIS Benin', fr: 'ESGIS Bénin' },
+      degree: { en: 'Bachelor\'s degree in computer science, networks and telecommunications', fr: 'Licence en informatique, Réseaux et Télécommunication' },
       specialty: { en: 'Web & Mobile Development', fr: 'Développement Web & Mobile' },
-      period: '2017 - 2019',
+      period: '2018 - 2021',
     },
     {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Bachelor in Computer Science', fr: 'Licence Informatique' },
+      school: { en: 'ISM Adonaï Benin ', fr: 'ISM Adonaï Benin ' },
+      degree: { en: 'Bachelor\'s Degree in Marketing and Sales', fr: 'Licence en Marketing et Action Commerciale ' },
       period: '2014 - 2017',
+    },
+    {
+      school: { en: 'College Catholic "Père Aupiais" ', fr: 'Collège Catholique Père Aupiais' },
+      degree: { en: 'Bachelor\'s Degree in Marketing and Sales', fr: 'Licence en Marketing et Action Commerciale ' },
+      period: '2014',
     },
   ],
 
   // ===== HOBBIES (optional) =====
   hobbies: [
     {
-      title: { en: 'Photography', fr: 'Photographie' },
+      title: { en: 'Gaming', fr: 'Gaming' },
       details: [
-        { en: 'Street photography', fr: 'Photo de rue' },
-        { en: '5 years', fr: '5 ans' },
+        { en: 'Video games', fr: 'Jeux vidéo' },
       ],
     },
     {
-      title: { en: 'Hiking', fr: 'Randonnée' },
+      title: { en: 'Science fiction', fr: 'Science-fiction' },
       details: [
-        { en: 'Mountain trails', fr: 'Sentiers de montagne' },
+        { en: 'Reading', fr: 'Lecture' },
       ],
     },
     {
-      title: { en: 'Open Source', fr: 'Open Source' },
+      title: { fr: 'Documentaire', en: 'Documentary' },
     },
     {
-      title: { en: 'Guitar', fr: 'Guitare' },
-      details: [
-        { en: '3 years', fr: '3 ans' },
-      ],
+      title: { fr: 'Voyage', en: 'Travel' },
     },
   ],
 
@@ -335,7 +413,7 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== THEME =====
   theme: {
-    preset: 'warm', // 'minimal' | 'warm' | 'ocean' | 'forest' | 'slate' | 'lilac'
+    preset: 'ocean', // 'minimal' | 'warm' | 'ocean' | 'forest' | 'slate' | 'lilac'
     // You can override individual colors:
     // colors: {
     //   primary: '#8B5A2B',
