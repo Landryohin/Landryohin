@@ -11,7 +11,7 @@ export function Resume() {
   const { resolve } = useTranslation()
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-8">
+    <div className="w-full max-w-6xl mx-auto p-4">
       {/* Top bar: theme toggle + language + pdf */}
       <div className="flex items-center justify-between mb-4">
         <PdfDownload />

@@ -7,6 +7,7 @@ import {
   LocationIcon,
   PhoneIcon,
   WebsiteIcon,
+  WhatsAppIcon,
 } from '@/components/icons'
 import type { ContactType } from '@/data/types'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -19,6 +20,7 @@ const ICON_COMPONENTS: Record<ContactType, React.FC<React.SVGProps<SVGSVGElement
   phone: PhoneIcon,
   location: LocationIcon,
   website: WebsiteIcon,
+  whatsapp: WhatsAppIcon,
 }
 
 interface ContactItemProps {
@@ -32,7 +34,7 @@ export function ContactItem({ type, label, href }: ContactItemProps) {
   const IconComponent = ICON_COMPONENTS[type]
 
   const isCopyable = type === 'email' || type === 'phone'
-  const isExternal = type === 'github' || type === 'linkedin' || type === 'website'
+  const isExternal = type === 'github' || type === 'linkedin' || type === 'website' || type === 'whatsapp'
   const resolvedHref = isCopyable ? undefined : href
 
   const handleCopy = useCallback(() => {

@@ -30,8 +30,8 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== SEO (used in <head> meta tags) =====
   seo: {
-    title: 'Jane Doe — Fullstack Developer',
-    description: 'Interactive resume of Jane Doe, Fullstack Developer specializing in React and TypeScript.',
+    title: 'Landry Assereou OHIN — Fullstack Developer',
+    description: 'Développeur Fullstack spécialisé en PHP, VueJS 3 et Symfony 7. Expert en création d’applications métiers (Fintech, Logistique) et solutions WordPress sur mesure.',
   },
 
   // ===== LANGUAGES =====
@@ -50,7 +50,9 @@ export const resumeConfig: ResumeConfig = {
     { type: 'linkedin', label: 'Landry .A OHIN', href: 'https://www.linkedin.com/in/landry-a-ohin-053179188/' },
     { type: 'email', label: 'landrohin@gmail.com' },
     { type: 'phone', label: '+229 01 67 18 13 29' },
+    { type: 'whatsapp', label: 'WhatsApp', href: 'https://wa.me/2290167181329' },
     { type: 'location', label: 'Cotonou, Bénin' },
+
   ],
 
   // ===== SKILLS =====
